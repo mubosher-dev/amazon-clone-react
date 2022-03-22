@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  background-color: #131921;
+  position: fixed;
+  z-index: 1000;
+  position: -webkit-fixed;
+  top: 0;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+}
+
+.header__logo {
+  width: 80px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__searchbox {
+  align-items: center;
+  flex: 1;
+  background-color: #fff;
+  position: relative;
+  padding: 3px;
+}
+
+.header__searchbox .MuiInput-root {
+  width: 95%;
+}
+
+.header__searchbox button {
+  padding: 7px;
+  border: none;
+  outline: none;
+  top: 0;
+  right: 0%;
+  background: #cd9042;
+  bottom: 0;
+  height: 100%;
+  color: #fff !important;
+  position: absolute;
+}
+
+.header__link {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__link a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.header__options {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+.flex {
+  margin: 0 10px;
+  display: flex !important;
+  flex-direction: row !important;
+}
+.flex span {
+  padding-top: 10px;
+}
+
+.header__options span:nth-child(1) {
+  font-size: 10px;
+}
+
+.header__options span:nth-child(2) {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 300px) and (max-width: 450px) {
+  .header__logo {
+    margin-top: 10px;
+  }
+  .header__searchbox {
+    display: none;
+  }
+  .header__options {
+    margin: 0 5px !important;
+  }
+
+  .header__options span:nth-child(1) {
+    font-size: 8px;
+  }
+
+  .header__options span:nth-child(2) {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
